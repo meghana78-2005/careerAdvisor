@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPath Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">EduPath</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#assessment" class="nav-link">Assessment</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#careers" class="nav-link">Careers</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <h2>Find Your Perfect Career Path</h2>
+                <p>Get personalized guidance on subjects, degrees, and careers based on your strengths and interests.</p>
+                <button class="cta-button" onclick="showSection('assessment')">Start Assessment</button>
+            </div>
+        </section>
+
+        <!-- Assessment Quiz Section -->
+        <section id="assessment" class="section">
+            <div class="container">
+                <h2>Career Assessment</h2>
+                <div id="quiz-container">
+                    <!-- Quiz questions will be injected here by JavaScript -->
+                </div>
+                <button id="submit-quiz" class="cta-button" style="display: none;">Get Recommendations</button>
+            </div>
+        </section>
+
+        <!-- Recommendations & Courses Section -->
+        <section id="recommendations" class="section">
+            <div class="container">
+                <h2>Your Personalized Recommendations</h2>
+                <div id="results-container">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample static page for Courses -->
+        <section id="courses" class="section">
+            <div class="container">
+                <h2>Local Government College Courses</h2>
+                <div class="filters">
+                    <select id="stream-filter">
+                        <option value="all">All Streams</option>
+                        <option value="science">Science</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts</option>
+                    </select>
+                </div>
+                <div id="courses-list" class="cards-container">
+                    <!-- Course cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
